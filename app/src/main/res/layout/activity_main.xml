@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText untuk Nama Lengkap -->
+    <EditText
+        android:id="@+id/inputnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:padding="10dp"/>
+
+    <!-- EditText untuk Email -->
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="10dp"/>
+
+    <!-- EditText untuk Nomor Telepon -->
+    <EditText
+        android:id="@+id/inputnomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <!-- RadioButton untuk Jenis Kelamin -->
+    <RadioGroup
+        android:id="@+id/radioGroupJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rblakilaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/rbperempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <!-- CheckBox untuk Hobi -->
+    <CheckBox
+        android:id="@+id/hobi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Music" />
+
+    <CheckBox
+        android:id="@+id/hobi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Olahraga" />
+
+    <CheckBox
+        android:id="@+id/hobi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Memasak" />
+
+    <!-- Button untuk Mengirim Data -->
+    <Button
+        android:id="@+id/tombolsimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="simpan"
+        android:padding="10dp"
+        android:text="Simpan Data " />
+
+</LinearLayout>
